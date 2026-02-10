@@ -41,7 +41,32 @@ JavaScript (ES6)
 
 ## Environment Variables
 Create a .env file in the root directory:
+
 PORT=3000
+
 OFFICIAL_EMAIL=you email
+
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 
+
+## Running the Project Locally
+
+npm install
+
+npm start
+
+Server will run on:
+
+http://localhost:3000
+
+## AI Integration Details
+
+Uses Google Gemini API
+
+Model: gemini-2.5-flash
+
+POST-based AI calls
+
+Secure API key handling via environment variables
+
+AI answers normalized to single-word output
