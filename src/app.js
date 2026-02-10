@@ -1,0 +1,10 @@
+const express = require("express");
+const bfhlRoutes = require("./routes/bfhl.routes");
+const healthRoutes = require("./routes/health.routes");
+const errorHandler = require("./middleware/error.middleware");
+const app = express();
+app.use(express.json());
+app.use("/bfhl", bfhlRoutes);
+app.use("/health", healthRoutes);
+app.use(errorHandler);
+module.exports = app;
